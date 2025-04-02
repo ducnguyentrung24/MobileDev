@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Compass circle background -->
+    <item>
+        <shape android:shape="oval">
+            <size android:width="200dp" android:height="200dp" />
+            <solid android:color="#F5F5F5" />
+            <stroke android:width="2dp" android:color="#333333" />
+        </shape>
+    </item>
+
+    <!-- North pointer (red) -->
+    <item>
+        <rotate android:fromDegrees="0">
+            <shape android:shape="line">
+                <stroke android:width="4dp" android:color="#E53935" />
+                <size android:width="100dp" android:height="1dp" />
+            </shape>
+        </rotate>
+    </item>
+
+    <!-- South pointer (gray) -->
+    <item>
+        <rotate android:fromDegrees="180">
+            <shape android:shape="line">
+                <stroke android:width="4dp" android:color="#757575" />
+                <size android:width="100dp" android:height="1dp" />
+            </shape>
+        </rotate>
+    </item>
+
+    <!-- Cardinal directions markers -->
+    <item android:top="10dp" android:gravity="center_horizontal">
+        <shape android:shape="rectangle">
+            <size android:width="10dp" android:height="10dp" />
+            <solid android:color="#333333" />
+        </shape>
+    </item>
+</layer-list>
